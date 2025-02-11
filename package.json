@@ -2,10 +2,10 @@
     "name": "my-node-app",
     "version": "1.0.0",
     "description": "A Node.js app using Express, Nanoid, and Formidable",
-    "main": "server.js",
+    "main": "serv.js",
     "scripts": {
-      "start": "node server.js",
-      "dev": "nodemon server.js"
+      "start": "node serv.js",
+      "dev": "nodemon serv.js"
     },
     "dependencies": {
       "express": "4.21.2",
