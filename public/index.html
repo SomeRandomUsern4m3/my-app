@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+header {
+    position: relative;
+    font-weight: 400;
+    font-size: 10vh;
+    font-family: "Titan One", serif;
+    text-align: center;
+}
+#tooltip {
+    position: relative;
+    font-family: "Titan One", serif;
+    font-weight: lighter;
+    font-size: 3vh;
+    font-weight: 100;
+    text-align: center;
+}
+.file-upload {
+    display: none;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+
+form {
+    position: relative;
+    top: 26vh;
+    left: 46vw;
+}
+
+#copylink {
+    position: relative;
+    top: 24vh;
+    text-align: center;
+    font-family: sans-serif;
+}
+input {
+    border: none;
+    padding: 10px;
+}
+#submitbutton {
+    position: relative;
+    left: 2vw;
+}
+    </style>
+</head>
+<body>
+    <header>Generate an embed</header>   
+    <h3 id="tooltip">Useful for when your embed is too big for discord</h3>
+    <h3 id="copylink">Upload file:</h3>
+    <!-- Change form method to POST and action to /fileupload -->
+    <form action="/fileupload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="fileUpload" name="fileUpload">
+        <br>
+        <input type="submit", value="Submit" id="submitbutton">
+    </form>
+</body>
+</html>
